@@ -12,5 +12,18 @@
   },
   "license": "MIT",
   "description": "quickly scaffold ebooks style twitter bots",
-  "author": "Cole Willsea <coleww@gmail.com> (http://colewillsea.com/)"
+  "author": "Cole Willsea <coleww@gmail.com> (http://colewillsea.com/)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coleww/ebooks.git"
+  },
+  "keywords": [
+    "twitter",
+    "ebooks",
+    "markov"
+  ],
+  "bugs": {
+    "url": "https://github.com/coleww/ebooks/issues"
+  },
+  "homepage": "https://github.com/coleww/ebooks#readme"
 }

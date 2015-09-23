@@ -2,20 +2,15 @@
   "name": "ebooks",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "tweet": "node bot.js",
-    "test": "standard && node test.js",
-    "publish": "npm run test"
-  },
-  "devDependencies": {
-    "tap": "^1.3.2",
-    "standard": "4.5.4"
-  },
   "dependencies": {
     "@coleww/markov": "0.0.8",
+    "add-ender": "^1.0.0",
+    "after": "^0.8.1",
+    "capitalize": "^1.0.0",
+    "iscool": "^1.1.7",
     "twit": "^2.1.0"
   },
   "license": "MIT",
-  "description": "ebooks ----------------",
+  "description": "quickly scaffold ebooks style twitter bots",
   "author": "Cole Willsea <coleww@gmail.com> (http://colewillsea.com/)"
 }

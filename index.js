@@ -17,7 +17,7 @@ module.exports = function (lines, config, n, cb) {
     var start = m.pick()
     while (stopwords.indexOf(start.toLowerCase()) !== -1) start = m.pick()
 
-    var toot = !!cb ? cb(m) : addEnder(capitalize(m.fill(, 12).join(" ").toLowerCase()))
+    var toot = !!cb ? cb(m) : addEnder(capitalize(m.fill(start, 12).join(" ").toLowerCase()))
 
     while (stopwords.indexOf(toot.split(' ')[toot.split(' ').length - 1].toLowerCase()) !== -1) toot = toot.split(' ').slice(0, toot.split(' ').length - 1).join(' ')
     console.log(toot)
@@ -30,6 +30,6 @@ module.exports = function (lines, config, n, cb) {
   })
 
   lines.forEach(function (line, i) {
-    m.seed(line, init)
+    m.seed(line.toLowerCase(), init)
   })
 }

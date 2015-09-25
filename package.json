@@ -1,6 +1,6 @@
 {
   "name": "ebooks",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "dependencies": {
     "@coleww/markov": "0.0.8",

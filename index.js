@@ -11,8 +11,9 @@ module.exports = function (lines, config, n, cb) {
   var m = markov(n || 2)
 
   var init = after(lines.length, function () {
-    var toot = !!cb ? cb(m) : addEnder(capitalize(m.fill(m.pick()).join(" ").toLowerCase()))
-    if(iscool(toot)){
+    var toot = !!cb ? cb(m) : addEnder(capitalize(m.fill(m.pick(), 12).join(" ").toLowerCase()))
+    console.log(toot)
+    if(iscool(toot) && toot.length < 140){
       T.post('statuses/update', {status: toot}, function (err, data, response) {
         console.log(err)
         console.log(data)

@@ -1,6 +1,6 @@
 {
   "name": "ebooks",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "dependencies": {
     "@coleww/markov": "0.0.8",
@@ -8,6 +8,7 @@
     "after": "^0.8.1",
     "capitalize": "^1.0.0",
     "iscool": "^1.1.7",
+    "stopwords": "0.0.5",
     "twit": "^2.1.0"
   },
   "license": "MIT",

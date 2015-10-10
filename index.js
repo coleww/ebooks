@@ -1,6 +1,6 @@
 var after = require('after')
-var makeIsCool  = require('iscool')
-var iscool = makeIsCool()
+var tipots  = require('this-is-probably-ok-to-say')
+
 var markov = require('@coleww/markov')
 var Twit = require('twit')
 var addEnder = require('add-ender')
@@ -21,7 +21,7 @@ module.exports = function (lines, config, n, cb) {
 
     while (stopwords.indexOf(toot.split(' ')[toot.split(' ').length - 1].toLowerCase()) !== -1) toot = toot.split(' ').slice(0, toot.split(' ').length - 1).join(' ')
     console.log(toot)
-    if(iscool(toot) && toot.length < 140 && toot.length > 0){
+    if(tipots(toot) && toot.length < 140 && toot.length > 0){
       T.post('statuses/update', {status: toot}, function (err, data, response) {
         console.log(err)
         console.log(data)
